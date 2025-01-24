@@ -1,0 +1,22 @@
+.site-footer {
+    background-color: #000000; /* Light background color */
+    padding: 20px; /* Space inside the footer */
+    text-align: center; /* Center-align text */
+    font-size: 14px; /* Font size for the footer text */
+    color: #545354; /* Text color */
+    border-top: 1px solid #464546; /* Light border at the top */
+}
+
+.site-footer a {
+    color: #ff982c; /* Link color */
+    text-decoration: none; /* No underline for links */
+    margin: 0 5px; /* Space between links */
+}
+
+.site-footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.site-footer p {
+    margin: 10px 0; /* Space between paragraphs */
+}

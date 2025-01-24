@@ -1,0 +1,116 @@
+/* Custom Navbar Styles */
+.navbar-custom {
+    background-color: #2f2d2e;
+    position: sticky;
+    z-index: 1000; /* Ensures the navbar stays on top of other elements */
+}
+
+.navbar-custom .navbar-brand, 
+.navbar-custom .navbar-nav .nav-link, 
+.navbar-custom .site-name, 
+.navbar-nav .dropdown-toggle {
+    color: #fff;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover, 
+.navbar-nav .dropdown-toggle:hover {
+    color: #ff982c;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: #ff982c;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo-container .logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.logo-container .site-name {
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+/* Style the Navbar Toggler (hamburger icon) */
+.navbar-toggle-checkbox {
+    display: none;
+}
+
+.navbar-toggler-icon {
+    background-color: #2f2d2e;
+    width: 30px;
+    height: 3px;
+    margin: 6px auto;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.navbar-toggler-icon:hover {
+    background-color: #ff982c;
+}
+
+/* Navbar for Mobile View */
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 15px;
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #343a40;
+    border: none;
+    box-shadow: 0px 8px 16px #ff982c;
+    display: none;
+}
+
+.navbar-nav .nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .logo-container .site-name {
+        font-size: 18px;
+    }
+
+    .navbar-collapse {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #2f2d2e;
+    }
+
+    .navbar-toggle-checkbox:checked + .navbar-toggler-icon + .navbar-collapse {
+        display: flex;
+    }
+}
+
+/* Dropdown Item Styles */
+.navbar-nav .dropdown-menu .dropdown-item {
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: #ff982c;
+    color: #343a40;
+}

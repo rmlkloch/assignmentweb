@@ -6,118 +6,120 @@
     <title>SL Travel Blog</title>
     <link rel="stylesheet" href="slnavbar.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="img.css">
+    <link rel="stylesheet" href="imgg.css">
     <link rel="stylesheet" href="footer.css">
 
 <style>body{overflow-x: hidden;} </style>
 
 </head>
 <body>
-    <div clss="navbarfix">
-    <nav class="navbar navbar-expand-lg navbar-custom">
-        <div class="container-fluid">
-            <!-- Logo and Site Name -->
-            <div class="logo-container">
-                <img src="logo.jpg" alt="Logo" class="logo">
-                <span class="site-name">SL Travel Blog</span>
+    <div class="navbarfix">
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+                <!-- Logo and Site Name -->
+                <div class="logo-container">
+                    <img src="logo.jpg" alt="Logo" class="logo">
+                    <span class="site-name">SL Travel Blog</span>
+                </div>
+
+                <!-- Hidden Checkbox for Mobile Toggle -->
+                <input type="checkbox" id="navbar-toggle" class="navbar-toggle-checkbox">
+
+                <!-- Hamburger Icon (visible on small screens) -->
+                <label for="navbar-toggle" class="navbar-toggler-icon"></label>
+
+                <!-- Navbar Menu -->
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="slblog.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="destination page.html">Destinations</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="colombo page.html">Colombo</a></li>
+                                <li><a class="dropdown-item" href="kandy page.html">Kandy</a></li>
+                                <li><a class="dropdown-item" href="anurdhapura page.html">Anuradhapura</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Categories</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="beaches.html">Beaches & Coastal Areas</a></li>
+                                <li><a class="dropdown-item" href="culture.html">Cultural Heritage</a></li>
+                                <li><a class="dropdown-item" href="wildlife.html">Wildlife & Nature</a></li>
+                                <li><a class="dropdown-item" href="adventure.html">Adventure & Trekking</a></li>
+                                <li><a class="dropdown-item" href="food.html">Food & Cuisine</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-light" type="submit">Search</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
             </div>
-
-            <!-- Hidden Checkbox for Mobile Toggle -->
-            <input type="checkbox" id="navbar-toggle" class="navbar-toggle-checkbox">
-
-            <!-- Hamburger Icon (visible on small screens) -->
-            <label for="navbar-toggle" class="navbar-toggler-icon"></label>
-
-            <!-- Navbar Menu -->
-            <div class="navbar-collapse">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="file:///C:/Users/user/Documents/%23html/Assignment%20site/SLblog/slblog.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="file:///C:/Users/user/Documents/%23html/Assignment%20site/blog%20page/blog%20post.html">Blog</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="file:///C:/Users/user/Documents/%23html/Assignment%20site/destination/destination%20page/destination%20page.html">Destinations</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="file:///C:/Users/user/Documents/%23html/Assignment%20site/destination/colombo%20page/colombo%20page.html">colombo</a></li>
-                            <li><a class="dropdown-item" href="file:///C:/Users/user/Documents/%23html/Assignment%20site/destination/kandy%20page/kandy%20page.html">Kandy</a></li>
-                            <li><a class="dropdown-item" href="file:///C:/Users/user/Documents/%23html/Assignment%20site/destination/anuradhapura%20page/anurdhapura%20page.html">Anuradhapura</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#">Categories</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Category 1</a></li>
-                            <li><a class="dropdown-item" href="#">Category 2</a></li>
-                            <li><a class="dropdown-item" href="#">Category 3</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-light" type="submit">Search</button>
-                        </form>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</div>
-<div class="image-container">
-    <img src="img1.jpg" alt="Sample Image" class="centered-image">
-    <div class="centered-text">
-        <h1>DESTINATIONS</h1>
-        <p> Pick a place to start exploring!</p>
+        </nav>
     </div>
-</div><br><br>
-    <img src="featured.png" alt="featured" class="featured"><br><br><br>
-
-<div>
-   
     <div class="image-container">
-        <!-- First Row -->
-        <div class="row">
-            <div class="img">
-                <img src="img2.jpg" alt="Image 2"></a>
-                <p><h4>Lotus Tower</h4></a></p>
-            </div>
-            <div class="img">
-                <img src="img3.jpg" alt="Image 3"></a>
-                <p><h4>Temple of the Tooth</h4></a></p>
-            </div>
-            <div class="img">
-                <img src="img4.jpg" alt="Image 4"></a>
-                <p><h4>Ruwanwelisaya</h4></a></p>
-            </div>
+        <img src="img11.jpg" alt="Sample Image" class="centered-image">
+        <div class="centered-text">
+            <h1>DESTINATIONS</h1>
+            <p> Pick a place to start exploring!</p>
         </div>
-
-        <img src="img6.png" alt="image" class="image">
-
-        <footer class="site-footer">
-            <div class="footer-content">
-                <p>© Lochana's Travel Blog 2025</p>
-                <p>
-                    <a href="#">Affiliate Disclosures</a> • 
-                    <a href="#">Privacy Policy</a> • 
-                    <a href="#">Terms Of Use</a>
-                </p>
-                <p>
-                    Some of the pages on my travel blog contain affiliate links. Whenever you buy something through one of these links, 
-                    I get a small commission at no extra cost to you. As an affiliate, I only recommend products and services that I 
-                    feel are high quality and helpful to my readers. Thanks for your support!
-                </p>
-            </div>
-        </footer>
+    </div><br><br>
+        <img src="featuredd.png" alt="featured" class="featured"><br><br><br>
     
-</body>
-</html>
+    <div>
+       
+        <div class="image-container">
+            <!-- First Row -->
+            <div class="row">
+                <div class="img">
+                    <img src="img2.jpg" alt="Image 2"></a>
+                    <p><h4>Lotus Tower</h4></a></p>
+                </div>
+                <div class="img">
+                    <img src="img3.jpg" alt="Image 3"></a>
+                    <p><h4>Temple of the Tooth</h4></a></p>
+                </div>
+                <div class="img">
+                    <img src="img4.jpg" alt="Image 4"></a>
+                    <p><h4>Ruwanwelisaya</h4></a></p>
+                </div>
+            </div>
+    
+            <img src="img6.png" alt="image" class="image">
+    
+            <footer class="site-footer">
+                <div class="footer-content">
+                    <p>© Lochana's Travel Blog 2025</p>
+                    <p>
+                        <a href="#">Affiliate Disclosures</a> • 
+                        <a href="#">Privacy Policy</a> • 
+                        <a href="#">Terms Of Use</a>
+                    </p>
+                    <p>
+                        Some of the pages on my travel blog contain affiliate links. Whenever you buy something through one of these links, 
+                        I get a small commission at no extra cost to you. As an affiliate, I only recommend products and services that I 
+                        feel are high quality and helpful to my readers. Thanks for your support!
+                    </p>
+                </div>
+            </footer>
+        
+    </body>
+    </html>

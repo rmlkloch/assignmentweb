@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .results {
+            margin-top: 20px;
+        }
+        .result-item {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <div id="results" class="results">Loading...</div>
+
+    <script>
+        // Get the search query from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const query = urlParams.get('q');
+
+        // Simulate search results (replace this with a database or API call if needed)
+        const sampleData = [
+            { title: "Exploring Colombo", url: "colombo page.html" },
+            { title: "Cultural Highlights of Kandy", url: "kandy.html" },
+            { title: "food in Sri Lanka", url: "food.html" },
+            { title: "Best Beaches in Sri Lanka", url: "beaches.html" },
+            { title: "culture in Sri Lanka", url: "culture.html" },
+            { title: "Exploring Anuradhapura", url: "anurdhapura page.html" },
+            { title: "hiking adventure in Sri Lanka", url: "adventure.html" },
+            { title: "wild forest in Sri Lanka", url: "wildlife.html" },
+        ];
+
+        // Filter results based on query
+        const results = sampleData.filter(item => item.title.toLowerCase().includes(query.toLowerCase()));
+
+        // Display results
+        const resultsDiv = document.getElementById('results');
+        if (results.length > 0) {
+            resultsDiv.innerHTML = results.map(item => 
+                `<div class="result-item">
+                    <a href="${item.url}">${item.title}</a>
+                </div>`
+            ).join('');
+        } else {
+            resultsDiv.innerHTML = `<p>No results found for "<strong>${query}</strong>".</p>`;
+        }
+    </script>
+</body>
+</html>

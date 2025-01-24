@@ -1,20 +1,18 @@
-/* Full-page container for video and paragraph */
 .video-container {
     position: relative;
     width: 100%;
-    height: 100vh; /* Ensure the container takes up the full viewport height */
+    height: 100vh; 
     z-index: 1;
 }
 
-/* Make the video responsive */
 .video {
-    position: absolute;  /* Position it relative to its container */
+    position: absolute;  
     top: 0;
     left: 0;
-    width: 100%;         /* Make the video fill the width of the viewport */
-    height: 86%;        /* Make the video fill the height of the viewport */
-    object-fit: cover;   /* Ensure the video covers the screen while maintaining aspect ratio */
-    z-index: -1;         /* Make sure the video stays in the background */
+    width: 100%;        
+    height: 86%;       
+    object-fit: cover;    
+    z-index: -1;         
     pointer-events: none;
 }
 
@@ -27,13 +25,12 @@
     font-size: 2.5em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     text-align: center;
-    z-index: 10; /* Higher than the video */
+    z-index: 10;  
     width: 100%;
-    pointer-events: auto; /* Enable interactions */
+    pointer-events: auto;  
 }
 
-/* Styling for Smaller Headings */
-.h6, .h66 {
+ .h6, .h66 {
     font-size: 0.6em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     text-align: center;
@@ -49,8 +46,7 @@ h6,.h66{
     line-height: 80px;
 }
 
-/* Button Styling */
-.button {
+ .button {
     display: inline-block;
     margin-top: 20px;
     cursor: pointer;
@@ -64,11 +60,10 @@ h6,.h66{
     text-decoration: none;
     text-align: center;
     transition: background-color 0.3s ease, color 0.3s ease;
-    z-index: 15; /* Ensure button is clickable */
+    z-index: 15; 
 }
 
-/* Hover Effect */
-.button:hover {
+ .button:hover {
     background-color: rgba(0, 0, 0, 0.8);
     
 }

@@ -1,8 +1,7 @@
-/* Custom Navbar Styles */
 .navbar-custom {
     background-color: #2f2d2e;
     position: sticky;
-    z-index: 1000; /* Ensures the navbar stays on top of other elements */
+    z-index: 1000; 
 }
 
 .navbar-custom .navbar-brand, 
@@ -39,7 +38,6 @@
     display: inline-block;
 }
 
-/* Style the Navbar Toggler (hamburger icon) */
 .navbar-toggle-checkbox {
     display: none;
 }
@@ -57,7 +55,6 @@
     background-color: #ff982c;
 }
 
-/* Navbar for Mobile View */
 .navbar-collapse {
     display: flex;
     justify-content: flex-end;
@@ -104,7 +101,6 @@
     }
 }
 
-/* Dropdown Item Styles */
 .navbar-nav .dropdown-menu .dropdown-item {
     color: #fff;
     padding: 10px 20px;

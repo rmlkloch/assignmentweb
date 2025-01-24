@@ -1,8 +1,8 @@
 .image-container {
     position: relative;
-    display: inline-block; /* Ensures the container only takes the size of the image */
-    width: 100%; /* Adjust as needed */
-    height: auto; /* Maintain aspect ratio */
+    display: inline-block;  
+    width: 100%;  
+    height: auto;  
 }
 
 .centered-image {
@@ -15,40 +15,40 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centers the text horizontally and vertically */
+    transform: translate(-50%, -50%);  
     text-align: center;
-    color: white; /* Text color, adjust as needed */
-    font-size: 24px; /* Adjust font size */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add shadow for readability */
-    padding: 0 20px; /* Optional padding for better layout */
+    color: white;  
+    font-size: 24px;  
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+    padding: 0 20px;  
 }
 
 .centered-text h1 {
-    margin: 0; /* Remove default margin */
-    font-size: 36px; /* Adjust size for the main heading */
+    margin: 0; 
+    font-size: 36px; 
 }
 
 .centered-text p {
     margin-top: 10px;
     font-size: 18px;
 }
-/* Image Gallery Styling */
+ 
 .image-gallery {
     display: flex;
-    flex-direction: column; /* Stack rows vertically */
-    gap: 20px; /* Space between rows */
+    flex-direction: column;  
+    gap: 20px;  
     padding: 20px;
 }
 
-/* Row Styling */
+ 
 .row {
     display: flex;
-    justify-content: center; /* Center items */
-    gap: 20px; /* Space between images */
+    justify-content: center;  
+    gap: 20px;  
 }
 
 .img {
-    flex: 1 1 calc(33.33% - 20px); /* Default width for 3 images in the first row */
+    flex: 1 1 calc(33.33% - 20px);  
     text-align: center;
     max-width: 400px;
 }
@@ -62,7 +62,7 @@
 }
 
 .img img:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
+    transform: scale(1.05);  
 }
 
 .img p {
@@ -77,50 +77,50 @@
     font-weight: bold;
 }
 
-/* Adjust second and last row's layout */
+ 
 .row:nth-child(2) .img {
-    flex: 1 1 calc(50% - 20px); /* 2 images in the second row */
+    flex: 1 1 calc(50% - 20px);  
 }
 
 .row:nth-child(3) .img {
-    flex: 1 1 calc(100% - 20px); /* 1 image in the last row */
+    flex: 1 1 calc(100% - 20px);  
     
 }
 .image-container {
     position: relative;
-    display: inline-block; /* Ensures the container only takes the size of the image */
-    width: 100%; /* Makes the image container take full width */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 20px; /* Optional spacing between rows */
+    display: inline-block;  
+    width: 100%;  
+    height: auto;  
+    margin-bottom: 20px;  
 }
 
 .centered-image {
     width: 100%;
-    height: auto; /* Maintain aspect ratio */
+    height: auto;  
     display: block;
 }
 
 .last-row-image {
-    width: 80%; /* Adjust width for the last row image */
-    margin: 0 auto; /* Center the image horizontally */
-    display: block; /* Ensure proper layout */
+    width: 80%;  
+    margin: 0 auto;  
+    display: block;  
 }
 
 .centered-text {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centers the text horizontally and vertically */
+    transform: translate(-50%, -50%);  
     text-align: center;
-    color: white; /* Text color, adjust as needed */
-    font-size: 24px; /* Adjust font size */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add shadow for readability */
-    padding: 0 20px; /* Optional padding for better layout */
+    color: white;  
+    font-size: 24px;  
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);  
+    padding: 0 20px;  
 }
 
 .centered-text h1 {
-    margin: 0; /* Remove default margin */
-    font-size: 36px; /* Adjust size for the main heading */
+    margin: 0;  
+    font-size: 36px; 
 }
 
 .centered-text p {
@@ -131,24 +131,19 @@
 
 
 
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
     .row:nth-child(1) .img,
     .row:nth-child(2) .img {
-        flex: 1 1 calc(50% - 20px); /* 2 images per row for smaller screens */
+        flex: 1 1 calc(50% - 20px); 
     }
 
     .row:nth-child(3) .img {
-        flex: 1 1 calc(100% - 20px); /* 1 image for the last row */
+        flex: 1 1 calc(100% - 20px); 
     }
 }
 
 @media (max-width: 480px) {
     .img {
-        flex: 1 1 calc(100% - 20px); /* 1 image per row for mobile */
+        flex: 1 1 calc(100% - 20px); 
     }
-}
-
-.row{
-    
 }

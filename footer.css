@@ -1,22 +1,22 @@
 .site-footer {
-    background-color: #000000; /* Light background color */
-    padding: 20px; /* Space inside the footer */
-    text-align: center; /* Center-align text */
-    font-size: 14px; /* Font size for the footer text */
-    color: #545354; /* Text color */
-    border-top: 1px solid #464546; /* Light border at the top */
+    background-color: #000000; 
+    padding: 20px;  
+    text-align: center;  
+    font-size: 14px;  
+    color: #545354;
+    border-top: 1px solid #464546; 
 }
 
 .site-footer a {
-    color: #ff982c; /* Link color */
-    text-decoration: none; /* No underline for links */
-    margin: 0 5px; /* Space between links */
+    color: #ff982c; 
+    text-decoration: none; 
+    margin: 0 5px; 
 }
 
 .site-footer a:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline; 
 }
 
 .site-footer p {
-    margin: 10px 0; /* Space between paragraphs */
+    margin: 10px 0; 
 }

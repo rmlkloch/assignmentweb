@@ -1,0 +1,52 @@
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+ .results-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ .result-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+ .result-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: #ff982c;
+    transition: color 0.3s;
+}
+
+.result-link:hover {
+    color: #ff982c;
+}
+
+ #search-query {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+ footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    color: #ff982c;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SL Travel Blog</title>
-    <link rel="stylesheet" href="slnavbar.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="imgg.css">
-    <link rel="icon" href="logo.jpg" type="image/x-icon">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="stylesc.css">
     <link rel="stylesheet" href="footer.css">
 
-<style>body{overflow-x: hidden;} </style>
-
+    <link rel="stylesheet" href="slnavbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="img.css">
+    <link rel="stylesheet" href="footer.css">
+    
 </head>
 <body>
     <div class="navbarfix">
@@ -24,8 +25,10 @@
 
                 <input type="checkbox" id="navbar-toggle" class="navbar-toggle-checkbox">
 
+                
                 <label for="navbar-toggle" class="navbar-toggler-icon"></label>
 
+                
                 <div class="navbar-collapse">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
@@ -72,50 +75,76 @@
             </div>
         </nav>
     </div>
-    <div class="image-container">
-        <img src="img11.jpg" alt="Sample Image" class="centered-image">
-        <div class="centered-text">
-            <h1>DESTINATIONS</h1>
-            <p> Pick a place to start exploring!</p>
+
+   <br>
+    <section>
+        <div>
+            <img src="contact 2.jpg" alt="featured" class="featured" >
+            
         </div>
-    </div><br><br>
-        <img src="featuredd.png" alt="featured" class="featured"><br><br><br>
+    </section>
     
-    <div>
-       
-        <div class="image-container">
-            <div class="row">
-                <div class="img">
-                    <img src="d2.jpg" alt="Image 2"></a>
-                    <p><h4>Lotus Tower</h4></a></p>
-                </div>
-                <div class="img">
-                    <img src="d3.jpg" alt="Image 3"></a>
-                    <p><h4>Temple of the Tooth</h4></a></p>
-                </div>
-                <div class="img">
-                    <img src="d4.jpg" alt="Image 4"></a>
-                    <p><h4>Ruwanwelisaya</h4></a></p>
-                </div>
-            </div>
+
+    <!-- Intro section -->
+    <section class="contact-intro">
+        <h3>Contact Form</h3>
+        <p>Send me your questions, comments, or suggestions!</p>
+        <p>If you'd like to work with me or you have a question or comment, you can contact me using the form below. You can also find 
+            <a href="about.html" class="highlight-link">more info about me here</a>.
+        </p>
+        <p>Sometimes I'm busy traveling, but I try to respond to any messages!</p>
+    </section>
+
     
-            <img src="img6.png" alt="image" class="image">
+
+    <!-- Form box -->
+    <main>
+        <div class="form-box">
+            <form action="contact.php"  method="post" id="contactForm">
+                <label for="name">Your Name:</label>
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                <label for="email">Your Email:</label>
+                <input type="email" name="email" id="email" placeholder="Your Email" required>
+                <label for="subject">Subject:</label>
+                <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                <label for="message">Your Message:</label>
+                <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                <button type="submit" id="submitbutton">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <br> <br>
+
     
-            <footer class="site-footer">
-                <div class="footer-content">
-                    <p>© Lochana's Travel Blog 2025</p>
-                    <p>
-                        <a href="#">Affiliate Disclosures</a> • 
-                        <a href="#">Privacy Policy</a> • 
-                        <a href="#">Terms Of Use</a>
-                    </p>
-                    <p>
-                        Some of the pages on my travel blog contain affiliate links. Whenever you buy something through one of these links, 
-                        I get a small commission at no extra cost to you. As an affiliate, I only recommend products and services that I 
-                        feel are high quality and helpful to my readers. Thanks for your support!
-                    </p>
-                </div>
-            </footer>
-        
-    </body>
+
+    <section class="contact">
+        <div>
+                <h1>Get In Touch</h1>
+                <p>Send me your questions, comments, or suggestions!
+                <img src="contact3.jpeg " ></p>
+            
+        </div>
+    </section>
+    
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>© Lochana's Travel Blog 2025</p>
+            <p>
+                <a href="#">Affiliate Disclosures</a> • 
+                <a href="#">Privacy Policy</a> • 
+                <a href="#">Terms Of Use</a>
+            </p>
+            <p>
+                Some of the pages on my travel blog contain affiliate links. Whenever you buy something through one of these links, 
+                I get a small commission at no extra cost to you. As an affiliate, I only recommend products and services that I 
+                feel are high quality and helpful to my readers. Thanks for your support!
+            </p>
+        </div>
+    </footer>
+    
+
+
+</body>
 </html>

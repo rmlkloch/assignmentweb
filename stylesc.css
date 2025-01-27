@@ -1,0 +1,183 @@
+
+:root {
+    --primary-color: #f58072;
+    --secondary-color: #ff6b6b;
+    --background-color: #abbab8;
+    --text-color: #333;
+    --white: #fff;
+    --black: #000;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+   
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h3 {
+    color: #f58072;
+    margin-bottom: 20px; /* Space between heading and intro section */
+    text-align: center;
+}
+
+/* Intro section styling */
+.contact-intro {
+    text-align: center;
+    max-width: 800px;
+    padding: 30px;
+    margin: 0 auto;
+    margin-bottom: 40px; /* Adds space between intro section and form box */
+    background-color: #d9eae9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+}
+.contact-intro h3 {
+    font-family: 'Georgia', serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+}
+.contact-intro h3::before,
+.contact-intro h3::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 2px;
+    background: #ddd;
+}
+.contact-intro h3::before {
+    left: -50px;
+}
+.contact-intro h3::after {
+    right: -50px;
+}
+.contact-intro p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.contact-intro .highlight-link {
+    color: #ff6b6b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-intro .highlight-link:hover {
+    text-decoration: underline;
+}
+
+/* Add more specific selectors and media queries */
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #e0f1fd;
+}
+
+.contactForm {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Form box styling */
+.form-box {
+    background-color: #dbfafe;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Form input styling */
+input[type="text"],
+input[type="email"],
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #3d3d3d;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+textarea {
+    resize: vertical;
+}
+
+
+
+
+.submitbutton[type="submit"] {
+    background-color: #d0574a;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.submitbutton[type="submit"]:hover {
+    background-color: #dd4136;
+}
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+}
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+.header .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    /*gap: 20px;*/
+}
+.header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.header nav ul li a.active,
+.header nav ul li a:hover {
+    color: orange;
+}
+
+
+.contact {
+    max-width: 1000px; /* Limit the width of the main content */
+    margin: 0 auto; /* Center the main content */
+    padding: 20px; /* Add padding around the content */
+    background-color: #f0e1f7; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+

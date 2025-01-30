@@ -1,4 +1,9 @@
 <?php
+error_reporting(E_ALL); 
+ini_set('display_errors', 1);
+?>
+
+<?php
 $servername = "sql210.infinityfree.com"; 
 $username = "if0_38208139";
 $password = "gHdewo8jLIg0D";
